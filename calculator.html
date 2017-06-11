@@ -1,64 +1,72 @@
-<div class='container'>
-  <div id='calculator'>
+<html>
+  <head>
+      <title>Kevin's Calculator</title>
+      <link rel="stylesheet" type="text/css" href="calc_assets/calc.css">
+      <script src="calc_assets/calc.js"></script>
+    </head>
 
-    <!-- TITLE -->
+  <div class='container'>
+    <div id='calculator'>
 
-    <div id='title' class='text-center'>
-      <h5><b>ELECTRONIC CALCULATOR</b></h5>
-    </div>
+      <!-- TITLE -->
 
-    <!-- ENTRY BOX -->
-
-    <div id='entrybox' class='text-right'>
-      <div id='entry'>
-        <p id='answer'>0</p>
+      <div id='title' class='text-center'>
+        <h5><b>ELECTRONIC CALCULATOR</b></h5>
       </div>
-      <div id='history'>
-        <p>0</p>
+
+      <!-- ENTRY BOX -->
+
+      <div id='entrybox' class='text-right'>
+        <div id='entry'>
+          <p id='answer'>0</p>
+        </div>
+        <div id='history'>
+          <p>0</p>
+        </div>
       </div>
+
+      <!-- BUTTONS -->
+
+      <div id='buttons'>
+
+        <button class='red' value='ac'>AC</button>
+        <button class='red' value='ce'>CE</button>
+        <button value='/'>&divide;</button>
+        <button value='*'>x</button>
+
+        <button value='7'>7</button>
+        <button value='8'>8</button>
+        <button value='9'>9</button>
+        <button value='-'>-</button>
+
+        <button value='4'>4</button>
+        <button value='5'>5</button>
+        <button value='6'>6</button>
+        <button value='+'>+</button>
+
+
+        <button value='1'>1</button>
+        <button value='2'>2</button>
+        <button value='3'>3</button>
+        <button class='invisible'>N</button>
+
+        <button id='zeroButton' value='0'>0</button>
+        <button value='.'>.</button>
+        <button id='equalButton' value='='>=</button>
+
+      </div>
+      <!-- end buttons -->
+      <div id='tester'></div>
     </div>
+    <!-- end calculator -->
+  </div>
+  <!-- end container -->
 
-    <!-- BUTTONS -->
-
-    <div id='buttons'>
-
-      <button class='red' value='ac'>AC</button>
-      <button class='red' value='ce'>CE</button>
-      <button value='/'>&divide;</button>
-      <button value='*'>x</button>
-
-      <button value='7'>7</button>
-      <button value='8'>8</button>
-      <button value='9'>9</button>
-      <button value='-'>-</button>
-
-      <button value='4'>4</button>
-      <button value='5'>5</button>
-      <button value='6'>6</button>
-      <button value='+'>+</button>
-
-
-      <button value='1'>1</button>
-      <button value='2'>2</button>
-      <button value='3'>3</button>
-      <button class='invisible'>N</button>
-
-      <button id='zeroButton' value='0'>0</button>
-      <button value='.'>.</button>
-      <button id='equalButton' value='='>=</button>
-
+  <footer id="footer" class="text-center">
+    <div class="container">
+      Designed & Coded by
+      <a href="https://kevinliu743.github.io/" target="_blank">
+          Kevin Liu</a>
     </div>
-    <!-- end buttons -->
-    <div id='tester'></div>
-  </div>
-  <!-- end calculator -->
-</div>
-<!-- end container -->
-
-<footer id="footer" class="text-center">
-  <div class="container">
-    Designed & Coded by
-    <a href="https://kevinliu743.github.io/" target="_blank">
-        Kevin Liu</a>
-  </div>
-</footer>
+  </footer>
+</html>
