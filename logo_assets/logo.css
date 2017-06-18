@@ -1,5 +1,8 @@
 body {
   overflow: hidden;
+  background-image: url("../backgrounds/pink_yellow.jpg");
+  background-size:199%;
+  z-index: 1;
 }
 
 #footer {
@@ -476,8 +479,8 @@ body {
   }
 }
 .holder .circle:nth-child(15) {
-  opacity: 0.1;
-  background: purple;
+  opacity: 0.35;
+  background: white;
   border: 13px solid black;
   border-bottom: none;
   border-radius: 675px 675px 675px 675px;
