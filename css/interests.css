@@ -7,6 +7,9 @@ body {
       width: 100%;
       z-index: 9999 !important;
   }
+  .display-flex:before {
+      display: inline;
+  }
 
   .parallax2 {
     /* The image used */
@@ -344,24 +347,20 @@ color: #fff !important;
 
   }
 
-  .p2{
-    height: 100px !important;
-  }
-
   .parallax2 {
     background-attachment: scroll;
   }
 
   #section21{
-    height: 0px !important;
+    height: 50px !important;
   }
 
   #section31 {
-    height: 0px !important;
+    height: 50px !important;
   }
 
   #section411 {
-    height: 0px !important;
+    height: 50px !important;
   }
 
   #section5 {

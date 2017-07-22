@@ -22,8 +22,8 @@ $(document).ready(function() {
   $(links).not('.ext_link').on('click', 'a', function(event){
       event.preventDefault();
       $('html, body').animate({
-          scrollTop: $($.attr(this, 'href') ).offset().top
-      }, 500);<!-- seconds -->
+          scrollTop: $($.attr(this, 'href') ).offset().top-50
+      }, 400);<!-- seconds -->
   });
 
 
