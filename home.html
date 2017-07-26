@@ -35,6 +35,21 @@
 
 </script>
 
+<script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+
 </head>
 
 
@@ -71,7 +86,7 @@
                         <li class="dropdown ext_link"id= "what"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-star"></i><span> TOP HITS</span><span class="caret"></span></a>
                                   <ul class="dropdown-menu">
                                     <li class="ext_link"><a href="https://cs70.kevinmliu.com" target="_blank"onclick="toggleFunction()">CS70 Notes</a></li>
-                                    <li class="ext_link"><a href="https://antigravityinvestments.com" onclick="toggleFunction()" target="_blank">ANTIGRAVITY INVESTMENTS</a></li>
+                                    <li class="ext_link"><a href="https://antigravityinvestments.com" onclick="toggleFunction()" onclick="trackOutboundLink('https://antigravityinvestments.com'); return false;" target="_blank">ANTIGRAVITY INVESTMENTS</a></li>
                                   </ul>
                                 </li>
                       </ul>
