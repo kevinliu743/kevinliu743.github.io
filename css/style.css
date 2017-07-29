@@ -197,7 +197,7 @@ color: #fff !important;
     background-position: 10% 60%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   #me_looking_up {
@@ -618,12 +618,12 @@ color: #fff !important;
 
   .parallax {
     background-attachment: scroll;
-    background-position: 50% 47%;
+    background-position: 40% 47%;
   }
 
   .parallax2 {
     background-attachment: scroll;
-    background-position: 0% 88%;
+    background-position: 80% 88%;
   }
 
   .parallax3 {
